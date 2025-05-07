@@ -38,5 +38,14 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
-      - name: Build with Enforcer plugin
-        run: mvn --batch-mode --errors --update-snapshots validate
+      - name: Install snapshot plugin to local repo
+        run: |
+          mvn -B \
+          -Denforcer.skip=true \
+          -pl pinot-dependency-verifier \
+          -am \
+          install \
+          -DskipTests
+
+      - name: Build & enforce
+        run: mvn -B -V -e -X verify
