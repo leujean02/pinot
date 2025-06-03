@@ -47,10 +47,6 @@ public class ColumnIndexCreationInfo implements Serializable {
     return _columnStatistics;
   }
 
-  public boolean isCreateDictionary() {
-    return _createDictionary;
-  }
-
   public boolean isUseVarLengthDictionary() {
     return _useVarLengthDictionary;
   }
