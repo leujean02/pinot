@@ -35,7 +35,7 @@ import org.apache.pinot.spi.data.Schema;
  */
 public class StatsCollectorConfig {
 
-  public final TableConfig _tableConfig;
+  private final TableConfig _tableConfig;
   private final Schema _schema;
   private final SegmentPartitionConfig _segmentPartitionConfig;
   private final Map<String, FieldConfig> _columnFieldConfigMap;

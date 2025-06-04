@@ -106,7 +106,7 @@ public class SegmentDirectoryPaths {
    * @return text index directory (if existst), null if index file does not exit
    */
   @Nullable
-  public static File findNativeTextIndexIndexFile(File indexDir, String column) {
+  public static File findNativeTextIndexIndexFile(String column, File indexDir) {
     String nativeIndexDirectory = column + V1Constants.Indexes.NATIVE_TEXT_INDEX_FILE_EXTENSION;
     return findFormatFile(indexDir, nativeIndexDirectory);
   }
