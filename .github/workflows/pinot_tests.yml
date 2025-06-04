@@ -23,9 +23,6 @@ on:
   push:
     branches:
       - master
-      - manual-testing
-      - gha-spi-test
-      - gha-segment-spi-test
     paths-ignore:
       - "contrib/**"
       - "docs/**"
