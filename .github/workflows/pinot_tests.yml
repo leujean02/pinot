@@ -110,7 +110,7 @@ jobs:
       - name: Checkout master into a subfolder
         uses: actions/checkout@v4
         with:
-          ref: master
+          ref: manual-testing
           path: master-head
       # Build the same module on master to produce the baseline JAR
       - name: Build SPI on master
