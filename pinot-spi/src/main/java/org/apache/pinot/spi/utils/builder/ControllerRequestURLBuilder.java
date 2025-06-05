@@ -32,7 +32,7 @@ import org.apache.pinot.spi.utils.StringUtil;
 
 
 public class ControllerRequestURLBuilder {
-  private final String _baseUrl;
+  public final String _baseUrl;
 
   private ControllerRequestURLBuilder(String baseUrl) {
     int length = baseUrl.length();
